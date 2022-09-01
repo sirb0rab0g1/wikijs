@@ -1,0 +1,7 @@
+FROM nginx:1.17
+
+COPY ./nginx.conf /etc/nginx/nginx.conf
+
+COPY ./mylocalhost_com.crt /etc/nginx/mylocalhost_com.crt
+
+COPY ./mylocalhost_com.key /etc/nginx/mylocalhost_com.key
